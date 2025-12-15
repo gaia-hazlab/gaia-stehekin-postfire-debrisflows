@@ -1,14 +1,46 @@
 name: gaia-stehekin
 channels:
   - conda-forge
+  - pytorch
 dependencies:
-  - python=3.11
+  # Core Python
+  - python=3.10
+  
+  # PyTorch (install from conda for better compatibility)
+  - pytorch>=2.0.0
+  - torchvision>=0.15.0
+  - torchaudio>=2.0.0
+  
+  # Seismic data processing
   - obspy>=1.4
+  
+  # Scientific computing
   - numpy>=1.26
+  - scipy>=1.10
   - pandas>=2.1
+  - scikit-learn>=1.4
+  
+  # Visualization
   - matplotlib>=3.8
   - plotly>=5.20
-  - scikit-learn>=1.4
+  
+  # Jupyter
+  - jupyter>=1.0
+  - ipykernel>=6.0
+  - notebook>=6.5
+  
+  # Utilities
+  - h5py>=3.8
+  - pyyaml>=6.0
+  - tqdm>=4.65
+  
+  # Required for noisepy (install from conda to avoid build issues)
+  - llvmlite
+  - numba
+  - mpi4py
+  
+  # Pip packages
   - pip
   - pip:
+      - seisbench>=0.4.0
       - noisepy-seis>=0.9.0
