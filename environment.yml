@@ -12,5 +12,3 @@ dependencies:
   - pip
   - pip:
       - noisepy-seis>=0.9.0
-      - git+https://github.com/seisSCOPED/quakeScope.git
-      - git+https://github.com/Akashkharita/PNW_Seismic_Event_Classification.git
