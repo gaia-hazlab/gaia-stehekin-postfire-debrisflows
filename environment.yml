@@ -1,0 +1,16 @@
+name: gaia-stehekin
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - obspy>=1.4
+  - numpy>=1.26
+  - pandas>=2.1
+  - matplotlib>=3.8
+  - plotly>=5.20
+  - scikit-learn>=1.4
+  - pip
+  - pip:
+      - noisepy-seis>=0.9.0
+      - git+https://github.com/seisSCOPED/quakeScope.git
+      - git+https://github.com/Akashkharita/PNW_Seismic_Event_Classification.git
